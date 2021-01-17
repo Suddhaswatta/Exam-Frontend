@@ -19,7 +19,10 @@
     padding-top: 2em;
     padding-bottom: 2em;
     text-transform: uppercase;
-    border-bottom:solid 2px   rgb(26, 96, 165);;
+    border-bottom:solid 2px rgb(26, 96, 165);
+    font-family: 'Abril Fatface', cursive;
+    font-size: 20px;
+    text-decoration: underline;
     
 }
 #sidenav .nav-item{
