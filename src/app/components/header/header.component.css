@@ -1,0 +1,38 @@
+nav{
+    background-color: rgb(13, 121, 230);
+    border-bottom: 4px solid  rgb(13, 121, 230);
+    }
+
+ul{
+    
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+.app-name{
+    float: left;
+    padding: 1em;
+    color: white;
+}
+ul li {
+    list-style: none;
+    padding: 1em;
+}
+a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    border-radius: 1em;
+
+}
+
+ul li:hover{
+    border-bottom: 4px solid white;
+}
+
+.hamburger {
+    width: 20px;
+    height: 2px;
+    background-color: white;
+    margin: 2px 0;
+  }

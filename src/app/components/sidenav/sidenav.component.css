@@ -1,0 +1,36 @@
+#sidenav{
+    position: absolute;
+    top: 0em;
+    margin-top: 0em;
+    left: 0;
+    height: 100%;
+    width: 200px;
+    background-color:rgb(21, 115, 209);
+    color: #fff;
+    transition-timing-function: linear;
+    transition-duration: 200ms;
+    
+}
+#sidenav.hide{
+    left: -200px;
+}
+.app-name{
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    text-transform: uppercase;
+    border-bottom:solid 2px   rgb(26, 96, 165);;
+    
+}
+#sidenav .nav-item{
+    padding: 1em;
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom:solid 2px  rgb(26, 96, 165);;
+}
+#sidenav .nav-item:hover{
+    padding: 1em;
+    background-color:  rgb(26, 96, 165);
+    
+    
+}
