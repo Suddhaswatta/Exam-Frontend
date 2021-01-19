@@ -12,30 +12,36 @@ export class SidenavComponent implements OnInit {
 
   ngOnInit(): void {
 
+    this.hideSideBar()
+
+    window.addEventListener("click",(e)=>{
+      if(e.clientX>200){
+        this.hideSideBar()
+      }
+      
+    })
+
     this._comm.getHamburgerIconClick().subscribe(
       observer => {
-        console.log(`Clicked ${observer}`)
         if(observer==true)
-          this.toggleSideBar()
+          this.showSideBar()
       }
     );
 
   }
 
-  toggle(){
   
-    this.toggleSideBar()
-
-    
-
-    
-    
-  }
-
-  private toggleSideBar(){
+  private showSideBar(){
     const sidenav : HTMLElement | null = document.getElementById("sidenav")
     if(sidenav!=null)
-      sidenav.classList.toggle("hide")
+      sidenav.classList.remove("hide")
+  }
+
+  private hideSideBar() {
+    const sidenav : HTMLElement | null = document.getElementById("sidenav")
+    if(sidenav!=null)
+      sidenav.classList.add("hide")
+
   }
 
 }
